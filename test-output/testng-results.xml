@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="324775" started-at="2021-03-30T08:32:36Z" finished-at="2021-03-30T08:38:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="324775" started-at="2021-03-30T08:32:36Z" finished-at="2021-03-30T08:38:01Z">
+      <class name="com.idp.cases.CMToolCase">
+        <test-method status="PASS" signature="initializeReport()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="initializeReport" is-config="true" duration-ms="319" started-at="2021-03-30T14:02:36Z" finished-at="2021-03-30T14:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeReport -->
+        <test-method status="PASS" signature="newCMTool(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="newCMTool" duration-ms="164148" started-at="2021-03-30T14:02:37Z" data-provider="excelData" finished-at="2021-03-30T14:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jack]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shank]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sprint10livecmtool@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[dfsdf]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[134]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[A4]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[aug 2023]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[https://www.hotcoursesabroad.com/?nr=true&geolocation=9]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Abroad]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[290408]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[LIVE]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[087639901]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[76]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newCMTool -->
+        <test-method status="PASS" signature="closebrow()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="closebrow" is-config="true" duration-ms="1" started-at="2021-03-30T14:05:21Z" finished-at="2021-03-30T14:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrow -->
+        <test-method status="PASS" signature="newCMTool(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="newCMTool" duration-ms="156818" started-at="2021-03-30T14:05:21Z" data-provider="excelData" finished-at="2021-03-30T14:07:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jack]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shank]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sprint10livecmtool@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[dfsdf]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[134]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[A4]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[aug 2023]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[https://www.hotcourses.ae/?nr=true&geolocation=9]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Arabic]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[90409]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[LIVE]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[087639901]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[76]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newCMTool -->
+        <test-method status="PASS" signature="closebrow()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="closebrow" is-config="true" duration-ms="1" started-at="2021-03-30T14:07:58Z" finished-at="2021-03-30T14:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrow -->
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="closeReport" is-config="true" duration-ms="2229" started-at="2021-03-30T14:07:58Z" finished-at="2021-03-30T14:08:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- com.idp.cases.CMToolCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

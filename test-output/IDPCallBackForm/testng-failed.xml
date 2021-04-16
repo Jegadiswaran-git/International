@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IDPCallBackForm]">
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.idp.cases.CallBackFormCase">
+        <methods>
+          <include name="initializeReport"/>
+          <include name="closeReport"/>
+          <include name="verifyCBF"/>
+        </methods>
+      </class> <!-- com.idp.cases.CallBackFormCase -->
+      <class name="com.idp.cases.C4CTest">
+        <methods>
+          <include name="closeReport"/>
+          <include name="initializeReport"/>
+        </methods>
+      </class> <!-- com.idp.cases.C4CTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)">
+    <classes>
+      <class name="com.idp.cases.CallBackFormCase">
+        <methods>
+          <include name="initializeReport"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- com.idp.cases.CallBackFormCase -->
+      <class name="com.idp.cases.C4CTest">
+        <methods>
+          <include name="closeReport"/>
+          <include name="initializeReport"/>
+          <include name="verifyC4C"/>
+        </methods>
+      </class> <!-- com.idp.cases.C4CTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [IDPCallBackForm] -->

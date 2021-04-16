@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Hotcourses Abroad Regression Pack]" parallel="classes">
+  <test name="HC Abroad Regression Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.idp.cases.NewRegistration">
+        <methods>
+          <include name="newregister"/>
+          <include name="initializeReport"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- com.idp.cases.NewRegistration -->
+    </classes>
+  </test> <!-- HC Abroad Regression Test(failed) -->
+</suite> <!-- Failed suite [Hotcourses Abroad Regression Pack] -->
