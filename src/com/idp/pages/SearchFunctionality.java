@@ -73,7 +73,7 @@ public class SearchFunctionality {
 	@FindBy(xpath = "//ul[@id='tab1lid']//button")
 	public static WebElement podsearchbtn;
 
-	@FindBy(xpath = "//div[@class='logo']//img[contains(@class,'lazy-loaded')]")
+	@FindBy(xpath = "/html/body/div[2]/header[1]/div/div/a/img")
 	public static WebElement abroadlogo;
 
 	@FindBy(xpath = "//li[@id='nav-j']")

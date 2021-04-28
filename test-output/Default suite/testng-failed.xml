@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.idp.cases.RankingsCase">
+      <class name="com.idp.cases.CallBackFormArticleCase">
         <methods>
-          <include name="verifyRanking"/>
-          <include name="initializeReport"/>
+          <include name="verifyCBFArticlePages"/>
           <include name="closeReport"/>
+          <include name="initializeReport"/>
         </methods>
-      </class> <!-- com.idp.cases.RankingsCase -->
+      </class> <!-- com.idp.cases.CallBackFormArticleCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

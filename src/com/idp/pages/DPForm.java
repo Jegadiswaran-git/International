@@ -216,7 +216,7 @@ public class DPForm {
 	@FindBy(xpath="//select[@id='yournationality']")
 	public static WebElement nationality;
 	
-	@FindBy(xpath="//*[@id='wrapper']/div/a/img")
+	@FindBy(xpath="/html/body/header[1]/div/div/a/img")
 	public static WebElement abroadlogo;
 	
 	@FindBy(xpath="//select[@name='yearOfJoin']")

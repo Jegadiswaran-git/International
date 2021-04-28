@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.idp.cases.FbloginPage">
+      <class name="com.idp.cases.CallBackFormCase">
         <methods>
-          <include name="closeReport"/>
           <include name="initializeReport"/>
-          <include name="closebrow"/>
-          <include name="verifyfblogin"/>
+          <include name="closeReport"/>
+          <include name="verifyCBF" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.idp.cases.FbloginPage -->
+      </class> <!-- com.idp.cases.CallBackFormCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

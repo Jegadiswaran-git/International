@@ -84,6 +84,35 @@ public class MyICPage {
 	// click agree cookie button
 	@FindBy(xpath = "//a[@class='gt_it']")
 	public static WebElement gotit;
+	
+	
+	@FindBy(xpath = ".//*//a//input[@id='loginBtn']")
+	public static WebElement ssoSignIn;
+
+
+	@FindBy(xpath = ".//*[@name='loginfmt']")
+	public static WebElement UserName;
+
+
+	@FindBy(xpath = ".//*[@id='passwordInput']")
+	public static WebElement Pwd;
+
+
+	@FindBy(xpath = ".//*[@type='submit']")
+	public static WebElement Submit;
+
+	@FindBy(xpath = ".//*[@id='submitButton']")
+	public static WebElement SignIn;
+
+	@FindBy(xpath = ".//*[@id='staticpassword']")
+	public static WebElement pswd;
+
+
+	@FindBy(xpath = ".//*[@id='loginBtn']")
+	public static WebElement signIn;
+	
+	@FindBy(xpath = "//a[@class='nma_org']")
+	public static WebElement signinlink;
 
 	//String screenshotPath = Commanmethod.addScreenshot();
 
@@ -113,12 +142,31 @@ public class MyICPage {
 			Commanmethod.click(proceedlink);
 		}
 
-		cm.click(signinbtn);
-		cm.type(emailtxtbox, emailid);
-		cm.type(passwordtextbox, pwd);
-		cm.logger.log(LogStatus.INFO, "Sign in to MYIC application",
-				"" + Commanmethod.logger.addScreenCapture(Commanmethod.addScreenshot()));
-		cm.click(loginbtn);
+//		cm.click(signinbtn);
+//		cm.type(emailtxtbox, emailid);
+//		cm.type(passwordtextbox, pwd);
+//		cm.logger.log(LogStatus.INFO, "Sign in to MYIC application",
+//				"" + Commanmethod.logger.addScreenCapture(Commanmethod.addScreenshot()));
+//		cm.click(loginbtn);
+		
+		
+		Commanmethod.click(signinlink);
+
+
+		Thread.sleep(5000);
+
+		Commanmethod.click1(ssoSignIn);
+		Commanmethod.waitUntilElementClickable(UserName, 60);
+		Commanmethod.click(UserName);
+		Commanmethod.type(UserName, emailid);
+		Commanmethod.click(Submit);
+		Commanmethod.waitUntilElementClickable(Pwd, 60);
+		Commanmethod.click(Pwd);
+		Commanmethod.type(Pwd, pwd);
+		Commanmethod.click(SignIn);
+		Commanmethod.waitUntilElementClickable(Submit, 60);
+		Commanmethod.click(Submit);
+		
 		Thread.sleep(3000);
 		cm.click(admintab);
 		Thread.sleep(3000);

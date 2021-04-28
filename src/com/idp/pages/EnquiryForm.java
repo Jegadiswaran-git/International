@@ -190,7 +190,7 @@ public class EnquiryForm {
 	@FindBy(xpath = "//span[@class='fa fa-heart-o']")
 	public static WebElement praddfavlink;
 
-	@FindBy(xpath = "//div[@class='logo']//a//img[contains(@class,'lazy-loaded')]")
+	@FindBy(xpath = "/html/body/header[1]/div/div/a/img")
 	public static WebElement abroadlogo;
 
 	@FindBy(xpath = "//a[@id='topNavlogIcn']")

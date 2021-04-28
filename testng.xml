@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel Testing Suite">
-	<test name="Parallel Tests" parallel = "methods" thread-count = "4">
+<suite name="Suite">
+  <test  name="Test">
 		<classes>
 	         
              
-		                <class name="com.idp.cases.CMToolCase" />
+
+		               
+
+		     
+		               
+		               
+		               
+		                 <class name="com.idp.cases.ReviewCase" />
+		                  <class name="com.idp.cases.MyICCase" />
+		                    <class name="com.idp.cases.ReviewDisplayCase" />
+		                
 		           
 		                
 			</classes>

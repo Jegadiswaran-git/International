@@ -1,191 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="324775" started-at="2021-03-30T08:32:36Z" finished-at="2021-03-30T08:38:01Z">
+  <suite name="Default suite" duration-ms="117241" started-at="2021-04-27T08:23:44Z" finished-at="2021-04-27T08:25:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="324775" started-at="2021-03-30T08:32:36Z" finished-at="2021-03-30T08:38:01Z">
-      <class name="com.idp.cases.CMToolCase">
-        <test-method status="PASS" signature="initializeReport()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="initializeReport" is-config="true" duration-ms="319" started-at="2021-03-30T14:02:36Z" finished-at="2021-03-30T14:02:36Z">
+    <test name="Default test" duration-ms="117241" started-at="2021-04-27T08:23:44Z" finished-at="2021-04-27T08:25:42Z">
+      <class name="com.idp.cases.CallBackFormArticleCase">
+        <test-method status="PASS" signature="initializeReport()[pri:0, instance:com.idp.cases.CallBackFormArticleCase@3fee9989]" name="initializeReport" is-config="true" duration-ms="403" started-at="2021-04-27T13:53:44Z" finished-at="2021-04-27T13:53:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeReport -->
-        <test-method status="PASS" signature="newCMTool(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="newCMTool" duration-ms="164148" started-at="2021-03-30T14:02:37Z" data-provider="excelData" finished-at="2021-03-30T14:05:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jack]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Shank]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[sprint10livecmtool@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[testuser]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[dfsdf]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[134]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[A4]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[aug 2023]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[https://www.hotcoursesabroad.com/?nr=true&geolocation=9]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Abroad]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[290408]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[LIVE]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[087639901]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[76]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="verifyCBFArticlePages()[pri:0, instance:com.idp.cases.CallBackFormArticleCase@3fee9989]" name="verifyCBFArticlePages" duration-ms="116398" started-at="2021-04-27T13:53:45Z" finished-at="2021-04-27T13:55:41Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='Hidp_hdcont']//p[contains(text(),'Our counsellors at IDP Education offer personal ad')]' (tried for 30 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='Hidp_hdcont']//p[contains(text(),'Our counsellors at IDP Education offer personal ad')]' (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.idp.functionlibrary.Commanmethod.waitUntilElementVisible(Commanmethod.java:676)
+	at com.idp.pages.CallBackFormArticlePage.verifyCallbackforminArticlePages(CallBackFormArticlePage.java:293)
+	at com.idp.cases.CallBackFormArticleCase.verifyCBFArticlePages(CallBackFormArticleCase.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Hidp_hdcont']//p[contains(text(),'Our counsellors at IDP Education offer personal ad')]"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'IDP-LAP112', ip: '10.200.11.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=C:\Users\JEGADI~1.S\AppData\Local\Temp\scoped_dir9184_1378141136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53191}, acceptInsecureCerts=false, browserVersion=90.0.4430.85, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 67baf845ed508d939fb23ed18eccc972
+*** Element info: {Using=xpath, value=//div[@class='Hidp_hdcont']//p[contains(text(),'Our counsellors at IDP Education offer personal ad')]}
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newCMTool -->
-        <test-method status="PASS" signature="closebrow()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="closebrow" is-config="true" duration-ms="1" started-at="2021-03-30T14:05:21Z" finished-at="2021-03-30T14:05:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrow -->
-        <test-method status="PASS" signature="newCMTool(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="newCMTool" duration-ms="156818" started-at="2021-03-30T14:05:21Z" data-provider="excelData" finished-at="2021-03-30T14:07:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jack]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Shank]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[sprint10livecmtool@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[testuser]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[dfsdf]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[134]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[A4]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[aug 2023]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[https://www.hotcourses.ae/?nr=true&geolocation=9]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Arabic]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[90409]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[LIVE]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[087639901]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newCMTool -->
-        <test-method status="PASS" signature="closebrow()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="closebrow" is-config="true" duration-ms="1" started-at="2021-03-30T14:07:58Z" finished-at="2021-03-30T14:07:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrow -->
-        <test-method status="PASS" signature="closeReport()[pri:0, instance:com.idp.cases.CMToolCase@1ce92674]" name="closeReport" is-config="true" duration-ms="2229" started-at="2021-03-30T14:07:58Z" finished-at="2021-03-30T14:08:01Z">
+        </test-method> <!-- verifyCBFArticlePages -->
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:com.idp.cases.CallBackFormArticleCase@3fee9989]" name="closeReport" is-config="true" duration-ms="408" started-at="2021-04-27T13:55:41Z" finished-at="2021-04-27T13:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
-      </class> <!-- com.idp.cases.CMToolCase -->
+      </class> <!-- com.idp.cases.CallBackFormArticleCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
