@@ -12,9 +12,12 @@
 		               
 		               
 		               
-		                 <class name="com.idp.cases.ReviewCase" />
-		                  <class name="com.idp.cases.MyICCase" />
-		                    <class name="com.idp.cases.ReviewDisplayCase" />
+		                <class name="com.idp.cases.NewRegistration" />
+		                <class name="com.idp.cases.LoginFormPage" />
+		                <class name="com.idp.cases.ChangePasswordCase" />
+		                <class name="com.idp.cases.HomePageCase" />
+		                <class name="com.idp.cases.SearchCase" />
+		               
 		                
 		           
 		                

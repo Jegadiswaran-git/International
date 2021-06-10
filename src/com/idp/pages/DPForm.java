@@ -226,7 +226,7 @@ public class DPForm {
 	public static WebElement startmonth;
 	
 
-	@FindBy(xpath="//a[contains(text(),'Allow All')]")
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
 	public static WebElement allowallcookies;
 	
 	// verify Get advice megamenu option
@@ -261,11 +261,9 @@ public class DPForm {
           Commanmethod.click(proceedlink);
 		}
 		
-		if(Commanmethod.isElementPresent(allowallcookies)==true)
-		{
-			Commanmethod.click(allowallcookies);
-         
-		}
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 		
 		
 	

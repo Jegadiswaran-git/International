@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.idp.cases.CallBackFormArticleCase">
+      <class name="com.idp.cases.EFLEnquiryCase">
         <methods>
-          <include name="verifyCBFArticlePages"/>
           <include name="closeReport"/>
           <include name="initializeReport"/>
+          <include name="neweflenquiry" invocation-numbers="0 1"/>
+          <include name="closebrow"/>
         </methods>
-      </class> <!-- com.idp.cases.CallBackFormArticleCase -->
+      </class> <!-- com.idp.cases.EFLEnquiryCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

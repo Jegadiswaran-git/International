@@ -47,7 +47,7 @@ public class FbloginPage {
 	public void verifyfblogin() throws InterruptedException, IOException, SQLException, InvocationTargetException
 	{
 		
-		String url = "https://www.hotcoursesabroad.com/?nr=true";
+		String url = "https://mtest.hotcoursesabroad.com/?nr=true";
 		Commanmethod.openBrowser(url);
 		FacebookLogin fbobj = PageFactory.initElements(Commanmethod.driver, FacebookLogin.class);
 		fbobj.fblogin();

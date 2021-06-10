@@ -144,9 +144,7 @@ public class RankingPage {
 	@FindBy(xpath="//div[@id='divContentId']//div[2]//div[2]//div[1]//div[1]//p[1]")
 	public static WebElement academicprovcountrytwo;
 	
-	@FindBy(xpath="//a[contains(text(),'Allow All')]")
-	public static WebElement allowallcookies;
-	
+		
 	@FindBy(xpath = "//button[@id='details-button']")
 	public static WebElement advancedlink;
 
@@ -154,7 +152,8 @@ public class RankingPage {
 	public static WebElement proceedlink;
 	
 	
-	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
 	
 	
 	
@@ -171,6 +170,11 @@ public class RankingPage {
 		
 		Long loadtime = (Long)((JavascriptExecutor)driver).executeScript(
 	            "return performance.timing.loadEventEnd - performance.timing.navigationStart;");
+		
+		
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 			
 		cm.logger.log(LogStatus.INFO, "University rankings Page load time is " +  (loadtime / 1000) % 60  + " seconds ");
 		Thread.sleep(10000);

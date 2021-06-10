@@ -125,7 +125,8 @@ public class ReviewPage {
 	@FindBy(xpath="//h2[@id='qlclose1']")
 	public static WebElement successmsg;
 	
-	@FindBy(xpath="//a[contains(text(),'Allow All')]")
+	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
 	public static WebElement allowallcookies;
 	
 	@FindBy(xpath="//*[@id='JA.74$$$2710~4']")
@@ -174,11 +175,10 @@ public class ReviewPage {
 			Commanmethod.click(proceedlink);
 		}
 		
-	    if(Commanmethod.isDisplayed(allowallcookies))
-		{
-			Commanmethod.click(allowallcookies);
-         
-		}
+		
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 
 		cm.click(writeareviewbtn);
 		if(Commanmethod.isDisplayed(gotit))

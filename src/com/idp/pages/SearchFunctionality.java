@@ -129,6 +129,9 @@ public class SearchFunctionality {
 	@FindBy(xpath = "/html/body/section[2]/div/div[2]/div/div/form/ul[2]/li[3]/div/div/ul")
 	public static WebElement qualdropdown;
 	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
+	
 
 	public SearchFunctionality(WebDriver driver) {
 		this.driver = driver;
@@ -149,6 +152,11 @@ public class SearchFunctionality {
 			Commanmethod.click(advancedlink);
 			Commanmethod.click(proceedlink);
 		}
+		
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
+
 
 		// Long loadtime = (Long)((JavascriptExecutor)driver).executeScript(
 		// "return performance.timing.loadEventEnd -

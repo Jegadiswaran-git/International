@@ -24,7 +24,7 @@ public class CMToolJourney {
 	@FindBy(xpath="/html/body/section[2]/div/div[1]/div/div[1]/div/div/div/div/a/span")
 	public static WebElement coursematcher_button;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[2]/div/a")
+	@FindBy(xpath="/html/body/div[7]/div[1]/div[2]/div/a")
 	public static WebElement getstarted_button;
 	
 	@FindBy(xpath="//*[@id='studyLevelEntityDecSL_20002']")
@@ -438,6 +438,10 @@ public class CMToolJourney {
 		public static WebElement trycoursematcherbutton;
 		
 		
+		@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+		public static WebElement allowallcookies;
+		
+		
 		
 	
 	WebDriver driver;
@@ -462,6 +466,10 @@ public class CMToolJourney {
 			Commanmethod.click(advancedlink);
           Commanmethod.click(proceedlink);
 		}
+		
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 		Commanmethod.logger = Commanmethod.report.startTest("Verify Course Matcher Tool Journey Functionality in " + affiliate + "affiliate", "Scope: Regression pack");
         
 		cm.click(topnavsearchicn);

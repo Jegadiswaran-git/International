@@ -60,7 +60,7 @@ public class ChangePasswordFunctionality {
 	public static WebElement logbanner;
 
 	// click profileimage
-	@FindBy(xpath = "//span[@class='lo_ur']//img")
+	@FindBy(xpath = "/html/body/header[1]/div/nav/ul[1]/li[2]/a[2]/span/img")
 	public static WebElement clickprofileimage;
 
 	// username in profile page
@@ -175,20 +175,20 @@ public class ChangePasswordFunctionality {
 	public static WebElement mydetails_link;
 	
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/form/div[1]/div/div[1]/div[2]/div/a")
+	@FindBy(xpath="/html/body/div[7]/div/div[2]/div/form/div[1]/div/div[1]/div[2]/div/a")
 	public static WebElement changepassowrd_link;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div/div/form/div[1]/fieldset[2]/fieldset/div/div/input")
+	@FindBy(xpath="/html/body/div[8]/div/div/div/form/div[1]/fieldset[2]/fieldset/div/div/input")
 	public static WebElement existingpassword;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div/div/form/div[2]/fieldset[1]/fieldset[2]/fieldset/div[1]/div/input")
+	@FindBy(xpath="/html/body/div[8]/div/div/div/form/div[2]/fieldset[1]/fieldset[2]/fieldset/div[1]/div/input")
 	public static WebElement newpassword;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div/div/form/div[2]/fieldset[2]/fieldset[2]/fieldset/div/div/input")
+	@FindBy(xpath="/html/body/div[8]/div/div/div/form/div[2]/fieldset[2]/fieldset[2]/fieldset/div/div/input")
 	public static WebElement confirmpassword;
 	
 	
-	@FindBy(xpath="/html/body/div[5]/div/div/div/form/div[5]/div/input")
+	@FindBy(xpath="/html/body/div[8]/div/div/div/form/div[5]/div/input")
 	public static WebElement changepasswordbutton;
 	
 	@FindBy(xpath="/html/body/header[4]/div/p")
@@ -199,6 +199,11 @@ public class ChangePasswordFunctionality {
 	
 	@FindBy(xpath="/html/body/section[2]/div/div[2]/div")
 	public static WebElement homepagesearchbar;
+	
+	
+	@FindBy(xpath="/html/body/header[1]/div/nav/ul[1]/li[2]/div/div[2]/ul/li[1]/a")
+	public static WebElement loginlink;
+	
 	
 	
 	
@@ -239,6 +244,12 @@ public class ChangePasswordFunctionality {
 		// click avatar image
 		Commanmethod.click(clickavatarimage);
 		
+		Thread.sleep(3000);
+		
+		//click on login link
+		//Commanmethod.click(loginlink);
+		
+		Thread.sleep(3000);
 		
 		if (Commanmethod.isElementPresent(loginemail)==true) {
 			Commanmethod.logger.log(LogStatus.PASS, "Email address field is displayed");

@@ -55,7 +55,7 @@ public class HomePageCase {
 	@Test
 	public void verifyhomepage() throws InterruptedException, IOException, SQLException, InvocationTargetException
 	{
-		String url = "https://www.hotcoursesabroad.com/?nr=true";
+		String url = "https://mtest.hotcoursesabroad.com/?nr=true";
 		Commanmethod.openBrowser(url);
 		
 		

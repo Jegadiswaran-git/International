@@ -20,10 +20,9 @@ public class EFLEnquiryPage {
 	@FindBy(xpath = "//a[@id='proceed-link']")
 	public static WebElement proceedlink;
 	
-	@FindBy(xpath="//a[contains(text(),'Allow All')]")
-	public static WebElement allowallcookies;
+
 	
-	@FindBy(xpath="/html/body/div[4]/div/div/div[3]/div[4]/div/div[2]/a/span")
+	@FindBy(xpath="/html/body/div[7]/div/div/div[3]/div[4]/div/div[2]/a")
 	public static WebElement contactuniversity;
 	
 	@FindBy(xpath="//input[@id='fstname']")
@@ -56,38 +55,41 @@ public class EFLEnquiryPage {
 	@FindBy(xpath="//select[@id='yearOfJoin']")
 	public static WebElement startyear;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div/div[1]/form/div[3]/div[4]/div[3]/span[2]/div/select")
+	@FindBy(xpath="/html/body/div[7]/div/div/div[1]/form/div[3]/div[4]/div[3]/span[2]/div/select")
 	public static WebElement startmonth;
 	
 	@FindBy(xpath="//li[@id='fund-58']")
 	public static WebElement self_funded;
 	
-	@FindBy(xpath="//body/div[@id='middle_cnt']/div[1]/div[1]/div[1]/form[1]/div[3]/div[4]/div[6]/div[2]/div[1]/label[1]")
+	@FindBy(xpath="/html/body/div[7]/div/div/div[1]/form/div[3]/div[4]/div[5]/div[2]/div/label")
 	public static WebElement tandc_checkbox;
 	
 	@FindBy(xpath="//input[@id='greybut']")
 	public static WebElement proceedbutton;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/form/fieldset[1]/div[2]/div/span/div[1]/div/input")
+	@FindBy(xpath="/html/body/div[7]/div/div[2]/div/div/form/fieldset[1]/div[2]/div/span/div[1]/div/input")
 	public static WebElement password;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/form/fieldset[2]/div[2]/div/label")
+	@FindBy(xpath="/html/body/div[7]/div/div[2]/div/div/form/fieldset[2]/div[2]/div/label")
 	public static WebElement newsletter_flag;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/form/fieldset[2]/div[3]/div/label")
+	@FindBy(xpath="/html/body/div[7]/div/div[2]/div/div/form/fieldset[2]/div[3]/div/label")
 	public static WebElement universityupdate_flag;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/form/fieldset[2]/div[4]/div/label")
+	@FindBy(xpath="/html/body/div[7]/div/div[2]/div/div/form/fieldset[2]/div[4]/div/label")
 	public static WebElement survey_flag;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/form/div/div[1]/input")
+	@FindBy(xpath="/html/body/div[7]/div/div[2]/div/div/form/div/div[1]/input")
 	public static WebElement proceedbutton2;
 	
 	@FindBy(xpath="/html/body/footer/div[2]/div/span/a[2]")
 	public static WebElement iagreebutton;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div/div/div/div/div/div/div[1]/h2")
+	@FindBy(xpath="/html/body/div[7]/div/div/div/div/div/div/div/div[1]/p/text()")
 	public static WebElement successmsg;
+	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
 	
 	
 	
@@ -113,11 +115,9 @@ public class EFLEnquiryPage {
           Commanmethod.click(proceedlink);
 		}
 		
-		if(Commanmethod.isElementPresent(allowallcookies)==true)
-		{
-			Commanmethod.click(allowallcookies);
-         
-		}
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 		
 		
 		Commanmethod.click(contactuniversity);
@@ -137,10 +137,11 @@ public class EFLEnquiryPage {
 		
 		Commanmethod.logger.log(LogStatus.INFO, "EFL Enquiry form",
 				"" + Commanmethod.logger.addScreenCapture(Commanmethod.addScreenshot()));
-		
+		/*
 		Commanmethod.type(date, day);
 		Commanmethod.type(month, month1);
 		Commanmethod.type(year, year1);
+		*/
 		 JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].scrollIntoView(true);", citezenship_yes); 
 			
@@ -155,9 +156,9 @@ public class EFLEnquiryPage {
 		Thread.sleep(5000);
 		Commanmethod.selectDropdown(startmonth, startmonth1);
 		
-		
+		/*
 		Commanmethod.click(self_funded);
-		
+		*/
 		Commanmethod.click(tandc_checkbox);
 		
 		Commanmethod.click(proceedbutton);
@@ -174,6 +175,7 @@ public class EFLEnquiryPage {
 		Commanmethod.click(survey_flag);
 		
 		Commanmethod.click(proceedbutton2);
+		Thread.sleep(5000);
 		
 		if(successmsg.isDisplayed())
 		{

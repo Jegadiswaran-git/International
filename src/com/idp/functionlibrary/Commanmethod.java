@@ -73,6 +73,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.datatable.dependency.com.fasterxml.jackson.databind.exc.InvalidFormatException;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -164,13 +165,13 @@ public class Commanmethod {
 			
 			if (browserName.equalsIgnoreCase("chrome")) 
 			{
-                 
+              
 			
 				System.setProperty("webdriver.chrome.driver", FilePaths.chromeDriver);
 				System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
 				System.setProperty("webdriver.chrome.silentOutput", "true");
 				
-                options.setPageLoadStrategy(PageLoadStrategy.NONE);
+             options.setPageLoadStrategy(PageLoadStrategy.NONE);
 				
 				
 				driver = new ChromeDriver();

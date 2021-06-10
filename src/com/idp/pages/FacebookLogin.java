@@ -101,6 +101,10 @@ public class FacebookLogin {
 	public static WebElement iagreebutton;
 	
 	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
+	
+	
 	
 	public FacebookLogin(WebDriver driver)
     {
@@ -120,7 +124,10 @@ public class FacebookLogin {
 	        Commanmethod.click(proceedlink);
 	    }
 	    
-	    Thread.sleep(5000);
+	    Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
+		
 //	    if(iagreebutton.isDisplayed())
 //	    {
 //	    Commanmethod.click(iagreebutton);
@@ -130,7 +137,7 @@ public class FacebookLogin {
 //	    	System.out.println("Cookie policy pod not available");
 //	    }
 		
-		Thread.sleep(7000);
+		
 		// click avatar image
 		Commanmethod.click(clickavatarimage);
 		

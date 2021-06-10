@@ -71,7 +71,7 @@ public class EnquiryForm {
 	public static WebElement countryofresidence;
 
 	// Country of citizenship
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[1]/form/div[3]/div[1]/div[1]/div[2]/ul/li[1]")
+	@FindBy(xpath = "/html/body/div[7]/div/div/div[1]/form/div[3]/div[1]/div[1]/div[2]/ul/li[1]")
 	public static WebElement citizenship;
 
 	// Select mobile type
@@ -181,10 +181,10 @@ public class EnquiryForm {
 	@FindBy(xpath = "//a[@class='fl']")
 	public static WebElement prcontexploring;
 
-	@FindBy(xpath = "/html/body/div[2]/div[6]/div/div[2]/div/div[1]/div/div[2]/div[1]/div[1]/div[1]/a")
+	@FindBy(xpath = "/html/body/div[2]/div[9]/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[1]/div[1]/a")
 	public static WebElement prcdpod;
 
-	@FindBy(xpath = "/html/body/div[4]/div/div/div[3]/div[4]/div/div[2]/a")
+	@FindBy(xpath = "/html/body/div[7]/div/div/div[3]/div[4]/div/div[2]/a")
 	public static WebElement cdenqbtn;
 
 	@FindBy(xpath = "//span[@class='fa fa-heart-o']")
@@ -252,7 +252,7 @@ public class EnquiryForm {
 	@FindBy(xpath = "//button[@id='topNavSrchBtn']")
 	public static WebElement topnavsearchbtn;
 	
-	@FindBy(xpath = "/html/body/div[5]/div/div/div[2]/a")
+	@FindBy(xpath = "/html/body/div[8]/div/div/div[2]/a[1]")
 	public static WebElement univselect2;
 	
 	@FindBy(xpath="//select[@name='yearOfJoin']")
@@ -268,13 +268,13 @@ public class EnquiryForm {
 	public static WebElement managecookies;
 	
 	
-	@FindBy(xpath="//a[contains(text(),'Allow All')]")
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
 	public static WebElement allowallcookies;
 	
 	@FindBy(xpath="/html/body/footer/div[2]/div/span/a[2]")
 	public static WebElement cookieaccept;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div/div[3]/div/div[3]/div/div[1]/div/div[2]/div/div[4]/button")
+	@FindBy(xpath="/html/body/div[8]/div/div/div[3]/div/div[3]/div/div[1]/div/div[2]/div/div[4]/button")
 	public static WebElement postenquirybutton;
 	
 	@FindBy(xpath="/html/body/div[5]/div/div/div[3]/div/div[3]/div/div[1]/div/div[3]/fieldset/div[2]/div/label")
@@ -313,11 +313,9 @@ public class EnquiryForm {
           Commanmethod.click(proceedlink);
 		}
 		
-		if(Commanmethod.isElementPresent(allowallcookies)==true)
-		{
-			Commanmethod.click(allowallcookies);
-         
-		}
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 		
 
 		Commanmethod.waitUntilElementVisible(searchlensicon, 1000);
@@ -590,7 +588,7 @@ public class EnquiryForm {
             
     	
 			Commanmethod.scrolldown();
-			Commanmethod.selectDropdown(studylvl,studylevel);
+			Commanmethod.selectDropdown(studylvl,studylevel2);
 			Commanmethod.waitUntilElementVisible(selectsubject, 2000);
 			Commanmethod.selectDropdown(selectsubject, subject);
 			Commanmethod.selectDropdown(startYear, startyear1);
@@ -614,7 +612,7 @@ public class EnquiryForm {
 			Commanmethod.logger.log(LogStatus.INFO, "Navigated to My favourites page enquiry form");
 			Commanmethod.logger.log(LogStatus.PASS, "Navigated to My favourites page enquiry form","" + Commanmethod.logger.addScreenCapture(Commanmethod.addScreenshot()));
 			Commanmethod.scrolldown();
-			Commanmethod.selectDropdown(studylvl,studylevel);
+			Commanmethod.selectDropdown(studylvl,studylevel2);
 			Commanmethod.waitUntilElementVisible(selectsubject, 2000);
 			Commanmethod.selectDropdown(selectsubject, subject);
 			Commanmethod.selectDropdown(startYear, startyear1);

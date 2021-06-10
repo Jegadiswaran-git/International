@@ -375,6 +375,9 @@ public class HomePage {
 	@FindBy(xpath="//*[@id='sect1']")
 	public static WebElement privacynotice_newwindow;
 	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
+	
 	
 	
 	
@@ -389,7 +392,7 @@ public class HomePage {
 
 
 
-	public void topnavsection() {
+	public void topnavsection() throws InterruptedException {
 
 		Commanmethod.logger=Commanmethod.report.startTest("Verify Top Navigation Section Functionality", "Test");
 
@@ -401,6 +404,10 @@ public class HomePage {
 			Commanmethod.click(advancedlink);
 			Commanmethod.click(proceedlink);
 		}
+		
+		//Thread.sleep(3000);
+		// click accept cookie button
+		//Commanmethod.click(allowallcookies);
 
 		// Verify Hc abroad logo is displayed
 		if (Commanmethod.isDisplayed(abroadlogo)) {
@@ -778,10 +785,10 @@ public class HomePage {
 	// Method to verify Home Page contains all the sections 
 	public void homepagesections() throws InterruptedException
 	{
-		Commanmethod.click(iagreebtn);
+		Commanmethod.click(allowallcookies);
 		Commanmethod.logger=Commanmethod.report.startTest("Verify HomePage sections", "Test");
 
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		//Commanmethod.waitUntilElementVisible(staticheader, 10000);
 		//Comdition to verify the static header
 		if(staticheader.isDisplayed())

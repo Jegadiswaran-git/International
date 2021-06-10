@@ -19,12 +19,12 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Selenium/ojdbc5.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/jegadiswaran.s/.m2/repository/org/seleniumhq/selenium/selenium-api/3.6.0/selenium-api-3.6.0.jar" sourcepath="C:/Users/jegadiswaran.s/.m2/repository/org/seleniumhq/selenium/selenium-api/3.6.0/selenium-api-3.6.0-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/jegadiswaran.s/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-api"/>
-			<attribute name="maven.version" value="3.6.0"/>
+			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
+			<attribute name="maven.artifactId" value="webdrivermanager"/>
+			<attribute name="maven.version" value="4.2.2"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>

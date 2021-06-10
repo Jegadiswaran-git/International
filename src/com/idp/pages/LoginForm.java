@@ -171,6 +171,9 @@ public class LoginForm {
 
 	@FindBy(xpath="//a[@id='proceed-link']")
 	public static WebElement proceedlink;
+	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
 
 
 
@@ -190,13 +193,17 @@ public class LoginForm {
 			Commanmethod.click(advancedlink);
 			Commanmethod.click(proceedlink);
 		}
+		
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 
 
-		if(Commanmethod.isElementPresent(gotit)==true)
-		{
-			Commanmethod.click(gotit);
-
-		}
+//		if(Commanmethod.isElementPresent(gotit)==true)
+//		{
+//			Commanmethod.click(gotit);
+//
+//		}
 
 		Commanmethod.waitUntilElementVisible(clickavatarimage, 5000);
 

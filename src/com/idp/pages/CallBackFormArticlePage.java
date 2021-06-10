@@ -134,7 +134,7 @@ public class CallBackFormArticlePage {
 	@FindBy(xpath="//h1[contains(text(),'What is cross-border study?')]")
 	public static WebElement crosborderarthead;
 	
-	@FindBy(xpath="/html/body/footer/div[2]/div/span/a[2]")
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
 	public static WebElement allowallcookies;
 	
 	

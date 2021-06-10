@@ -140,6 +140,12 @@ public class RegistrationForm {
 	@FindBy(xpath="//*[@id='geoConsentTextDiv']/div/label")
 	public static WebElement geoconsentflag;
 	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
+	
+	
+	
+	
 	
 	
 	public RegistrationForm(WebDriver driver)
@@ -178,8 +184,10 @@ public class RegistrationForm {
           Commanmethod.click(proceedlink);
 		}
 	
+		
+		Thread.sleep(3000);
 		// click accept cookie button
-		//Commanmethod.click(gotit);
+		Commanmethod.click(allowallcookies);
 		
 		// click avatar image
 		Commanmethod.waitUntilElementVisible(clickavatarimage, 1000);

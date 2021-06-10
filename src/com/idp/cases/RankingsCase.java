@@ -40,7 +40,7 @@ public class RankingsCase {
 	@Test
 	public void verifyRanking() throws IOException, InterruptedException
 	{
-		String url = "https://www.hotcoursesabroad.com/?nr=true";
+		String url = "https://mtest.hotcoursesabroad.com/?nr=true";
 		Commanmethod.openBrowser(url);
 		
 		RankingPage rankpage_obj = PageFactory.initElements(Commanmethod.driver, RankingPage.class);

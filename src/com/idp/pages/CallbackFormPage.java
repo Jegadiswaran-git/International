@@ -56,12 +56,12 @@ public class CallbackFormPage {
 	@FindBy(xpath="//*[@id=\"enquirydiv\"]/fieldset[2]/div[1]/div/label")
 	public static WebElement consentFlag;
 	
-	@FindBy(xpath="/html/body/div[13]/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/form/div[4]/fieldset[2]/div[1]/div/label")
+	@FindBy(xpath="/html/body/div[17]/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/form/div[4]/fieldset[2]/div[1]/div/label")
 	public static WebElement terms_chk;
 	
-	@FindBy(xpath="/html/body/div[13]/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/form/div[4]/fieldset[2]/div[2]/div/label")
+	@FindBy(xpath="/html/body/div[17]/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/form/div[4]/fieldset[2]/div[2]/div/label")
 	public static WebElement contactMeByFlag;
-	@FindBy(xpath="/html/body/div[13]/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/form/div[4]/fieldset[2]/div[5]/div/label")
+	@FindBy(xpath="/html/body/div[17]/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/form/div[4]/fieldset[2]/div[4]/div/label")
 	public static WebElement shareIdpLeadUniFlag;
 	@FindBy(xpath="//input[@id='greybut_splash']")
 	public static WebElement getadvicebtn;
@@ -172,6 +172,9 @@ public class CallbackFormPage {
 	@FindBy(xpath="/html/body/div[13]/div/div/div/div/div[1]/div/div[4]/div/div[2]/div[4]/form/fieldset[2]/div[4]/div/label/div/text()")
 	public static WebElement survey_chkbox;
 	
+	@FindBy(xpath="/html/body/footer/div[2]/div/div[2]/a[2]")
+	public static WebElement allowallcookies;
+	
 	
 	
 	
@@ -191,6 +194,10 @@ public class CallbackFormPage {
 			Commanmethod.click(advancedlink);
           Commanmethod.click(proceedlink);
 		}
+		
+		Thread.sleep(3000);
+		// click accept cookie button
+		Commanmethod.click(allowallcookies);
 		Commanmethod.logger = Commanmethod.report.startTest("Verify CallBack Form Functionality in " + affiliatename + "affiliate", "Scope: Regression pack");
 		cm.logger.log(LogStatus.INFO, "Navigated to Content Hub Page",
 				"" + Commanmethod.logger.addScreenCapture(Commanmethod.addScreenshot()));
@@ -235,6 +242,8 @@ public class CallbackFormPage {
 //		cm.click(virtualcounselingbutton_thai);
 //		}
 		cm.click(how_would_you_like_counselled);
+		
+		Thread.sleep(3000);
 		cm.scrolldown();
 		
 		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
